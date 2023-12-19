@@ -5,6 +5,16 @@ document.entrada.addEventListener('submit', leFormulario)
 const olJoao = document.querySelector("#joao")
 const olMaria = document.querySelector("#maria")
 
+function atualizaTela() {
+    const estoque = getEstoque()
+    
+    document.entrada.fruta.value = "maca"
+    document.entrada.quantidade.value = 1
+   
+    preencheListaPessoa(estoque['joao'], olJoao)
+    preencheListaPessoa(estoque['maria'], olMaria)
+}
+
 function preencheListaPessoa(pessoa, lista) {
     lista.innerHTML = ""
 
