@@ -69,3 +69,5 @@ function transacaoNoEstoque(origem, destino, tipo, quantidade) {
     
     return
 }
+
+export {getEstoque, limpaEstoque, transacaoNoEstoque}
